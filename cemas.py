@@ -23,9 +23,9 @@ def main():
   log.custom(text="  ______ __ __  __    __  ", color='light_cyan', attrs=['bold'])
   log.custom(text=" / _/ __|  V  |/  \ /' _/ ", color='light_cyan', attrs=['bold'])
   log.custom(text="| \_| _|| \_/ | /\ |`._`. v1.0.0", color='light_cyan', attrs=['bold'])
-  log.custom(text=" \__/___|_| |_|_||_||___/ Content Manage System Mass Scanner\n", color='light_cyan', attrs=['bold'])
+  log.custom(text=" \__/___|_| |_|_||_||___/ Content Management System Mass Scanner\n", color='light_cyan', attrs=['bold'])
 
-  parser = argparse.ArgumentParser(usage='%(prog)s -t hostlist.txt [OPTIONAL]', description='a content manage system mass scanner, it will separate the hosts from the list that you have into several parts according to the cms used')
+  parser = argparse.ArgumentParser(usage='%(prog)s -t hostlist.txt [OPTIONAL]', description='a content management system mass scanner, it will separate the hosts from the list that you have into several parts according to the cms used')
   parser.add_argument('-t', '--target', dest='target', metavar='', help='specify your target files with your hosts lists', type=arg_file_validator, required=True)
   parser.add_argument('-c', '--cms', dest='cms', metavar='', help='specify your target cms default: (include all cms provided by tools)', type=arg_cms_validator, required=False)
   parser.add_argument('-d', '--out-dir', dest='dir', metavar='', help='specify the output directory', required=False)
