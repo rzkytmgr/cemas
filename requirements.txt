@@ -1,0 +1,2 @@
+urllib3==1.26.12
+termcolor==2.2.0
